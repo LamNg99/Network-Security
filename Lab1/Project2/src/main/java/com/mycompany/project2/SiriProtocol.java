@@ -11,18 +11,17 @@ package com.mycompany.project2;
 
 public class SiriProtocol {
     private static final int WAITING = 0;
-    private static final int SENTUSERNAME = 1;
-    private static final int SENTQUESTION = 2;
-    private static final int ANOTHER = 3;
+    private static final int SENTQUESTION = 1;
+    private static final int ANOTHER = 2;
 
-    private int state = WAITING;
- 
-    private String[] questions = { "Who created you?", 
-                                  "What does Siri mean?", 
-                                  "Are you a robot?"};
-    private String[] answers = { "I was created by Apple.",
-                                 "victory and beautiful",
-                                 "I am a virtual assistant"};
+    private String[] questions = { "What are you made of?", 
+                                  "Windows or Mac?", 
+                                  "What is the meaning of life?",
+                                  "How much do you earn?"};
+    private String[] answers = { "It’s complicated, but definitely not sugar, spice, or puppy dog tails.",
+                                 "I’m pretty loyal to Apple. It’s just how I’m made.",
+                                 "I Kant answer that. Ha ha!",
+                                 "I'm not in it for the money. But I do accept verbal high fives."};
     
     // Function to find the index of an element
     public static int findIndex(String arr[], String t) {

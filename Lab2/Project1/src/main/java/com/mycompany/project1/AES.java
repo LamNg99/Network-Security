@@ -58,7 +58,7 @@ public class AES {
             return new String(cipher.doFinal(cipherText));
 
         } catch (Exception E) {
-            System.err.println("decrypt Exception : "+E.getMessage());
+            System.err.println("Decrypt Exception : "+E.getMessage());
         }
         return null;
     }
